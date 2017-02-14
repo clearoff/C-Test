@@ -1,0 +1,18 @@
+server=fifo_server
+client=fifo_client
+serverSRC=server.c
+clientSRC=client.c
+cc=gcc
+
+.PHONY:all
+all:$(server) $(client)
+
+$(server):$(serverSRC)
+	$(cc) -o $@ $^ -g
+$(client):$(clientSRC)
+	$(cc) -o $@ $^
+
+.PHONY:clean
+clean: 
+	rm -i fifo_server fifo_client Myfifo
+
