@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	Makefile	/^BIN=TestSem$/;"	m
+CommSem	MySem.c	/^static int CommSem(int nsems,int flags)$/;"	f	file:
+CreatSem	MySem.c	/^int CreatSem(int nsems)$/;"	f
+DestorySem	MySem.c	/^int DestorySem(int semid)$/;"	f
+GetSemID	MySem.c	/^int GetSemID()$/;"	f
+InitSem	MySem.c	/^int InitSem(int semid)$/;"	f
+P	MySem.c	/^int P(int semid,int which)$/;"	f
+PATHNAME	MySem.h	16;"	d
+PROJID	MySem.h	17;"	d
+SRC	Makefile	/^SRC=TestSem.c MySem.c$/;"	m
+SemOp	MySem.c	/^int SemOp(int semid,int op,int num)$/;"	f
+V	MySem.c	/^int V(int semid,int which)$/;"	f
+__SEM_H__	MySem.h	9;"	d
+__buf	MySem.h	/^	struct seminfo  *__buf;  \/* Buffer for IPC_INFO(Linux-specific) *\/$/;"	m	union:semun	typeref:struct:semun::seminfo
+array	MySem.h	/^	unsigned short  *array;  \/* Array for GETALL, SETALL *\/$/;"	m	union:semun
+buf	MySem.h	/^	struct semid_ds *buf;    \/* Buffer for IPC_STAT, IPC_SET *\/$/;"	m	union:semun	typeref:struct:semun::semid_ds
+cc	Makefile	/^cc=gcc$/;"	m
+main	TestSem.c	/^int main()$/;"	f
+semun	MySem.h	/^union semun {$/;"	u
+val	MySem.h	/^	int val;    \/* Value for SETVAL *\/$/;"	m	union:semun
